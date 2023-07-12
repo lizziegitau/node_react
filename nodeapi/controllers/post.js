@@ -9,7 +9,7 @@ exports.getPosts  =(req,res) =>{
     .catch( err => console.log(err))
 };
 
-exports.CreatePost = (req,res) =>{
+exports.createPost = (req,res) =>{
     const post = new Post(req,body);
    
     post.save()
